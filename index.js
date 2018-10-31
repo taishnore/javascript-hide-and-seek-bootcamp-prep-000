@@ -17,7 +17,14 @@ function deepestChild() {
     }
 }
 
-
+function increaseRankBy(n) {
+    let tab = document
+		.getElementById("app")
+		.querySelectorAll("ul.ranked-list li");
+	for (let i = 0; i < tab.length; i++) {
+        tab[i].innerHTML = (parseInt(tab[i].innerHTML) + n)
+    }
+}
 
 
 
